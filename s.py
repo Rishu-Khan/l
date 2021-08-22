@@ -51,12 +51,11 @@ def banner():
 \x1b[1;90m   88`8b   88    88   `Y8b. 88~~~88 88    88 
 \x1b[1;91m   88 `88. 88b  d88 db   8D 88   88 88b  d88 
 \x1b[1;91m   88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P' 
-
-\033[1;97m   ═══════════════════•ೋೋ•═══════════════════
+\033[1;97m   ------------------------------------------
 \033[1;91m             Author   :  \033[1;92mRishu Khan
 \033[1;91m            Facebook  :  \033[1;92mRishu 3:)
 \033[1;91m            whatsapp  :  \033[1;92mNot use
-\033[1;97m   ═══════════════════•ೋೋ•═══════════════════""")
+\033[1;97m   -------------------------------------------""")
 
 host="https://mbasic.facebook.com"
 ua="Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
@@ -218,12 +217,12 @@ def menu():
   banner()
   print("\033[0;92m[•] Hello : "+nama)
   print("\033[0;92m[•] UID : "+id)
-  print("\033[0;97m─────────────────────────────────────────────────────────────")
+  print("\033[0;97m---------------------------------------------")
   print("\033[0;90m    [ Select Options ]")
   print("\033[0;91m[1] \033[1;92mDump ID Public/Friend")
   print("\033[0;91m[2] \033[1;92mCrack")
   print("\033[0;91m[0] \033[1;92mLogout")
-  print("\033[0;97m─────────────────────────────────────────────────────────────")
+  print("\033[0;97m---------------------------------------------")
   r=raw_input("\033[0;93m   [•] choose : ")
   if r=="":print("\033[0;92m   [!] Correct Content").format(R,N);menu()
   elif r=="1":
@@ -250,7 +249,7 @@ def publik():
 	try:
                 os.system("clear")
                 banner()
-                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                print ("\033[0;97m---------------------------------------------")
 		print("\033[0;92m[•] Type \'me\' If You Want To Take ID From Friends List")
 		idt = raw_input("\033[0;92m[•] User ID Target : ")
 		try:
@@ -265,7 +264,7 @@ def publik():
 		id = []
 		z=json.loads(r.text)
 		print("\033[0;92m[•] Getting ID ...")
-		print ("\033[0;97m─────────────────────────────────────────────────────────────")
+		print ("\033[0;97m---------------------------------------------")
 		qq = (op['first_name']+'.Rishu').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
@@ -274,11 +273,11 @@ def publik():
 			print("\r  %s "%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
 			print (  a["name"])
 		ys.close()
-		print ("\033[0;97m─────────────────────────────────────────────────────────────")
+		print ("\033[0;97m-----------------------------------------------------")
 		print ('\033[0;91m[•] \033[0;92m Successfully Take ID from %s'%op['name'])
 		print ("\033[0;91m[•] \033[0;92mTotal ID : %s"%(len(id)))
 		print ("\033[0;91m[•] \033[0;92mOutput : %s"%qq)
-                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                print ("\033[0;97m-----------------------------------------------------")
 		raw_input("\033[0;93m   [•] [Return]")
 		menu()
 		
@@ -429,13 +428,13 @@ def generate(text):
 def methode():
   os.system("clear")
   banner()
-  print ("\033[0;97m─────────────────────────────────────────────────────────────")
+  print ("\033[0;97m------------------------------------------------")
   print("\033[0;90m        [ Choose Crack Method ]")
   print("\033[0;91m[1] \033[0;92mCrack With mbasic")
   print("\033[0;91m[2] \033[0;92mCrack With m.facebook.com")
   print("\033[0;92m[3] \033[0;92mCrack With touch.facebook.com")
   print("\033[0;97m[4] \033[0;92mCrack With api")
-  print ("\033[0;96m─────────────────────────────────────────────────────────────")
+  print ("\033[0;96m------------------------------------------------")
   sek=raw_input("\033[0;93m[•] choose: ")
   if sek=="":print("\033[0;92m   [!] Correct Content").format(R,N);methode()
   elif sek=="1":
@@ -450,12 +449,12 @@ def methode():
     print("\033[0;92m   [!] Correct Content").format(R,N);methode()
 def logs():
   banner()
-  print("\033[0;97m─────────────────────────────────────────────────────────────")
+  print("\033[0;97m---------------------------------------------")
   print("\033[0;90m          [ Choose Login Method ]")
   print("\033[0;91m[1] \033[0;92mLogin With Token")
   print("\033[0;91m[2] \033[0;92mLogin With Cookie")
   print("\033[0;91m[0] \033[0;92mExit")
-  print("\033[0;97m─────────────────────────────────────────────────────────────")
+  print("\033[0;97m---------------------------------------------")
   sek=raw_input("\033[0;93m   [•] choose: ")
   if sek=="":
     print("\033[0;92m   [!] Correct Content").format(R,N);logs()
@@ -517,9 +516,9 @@ class crack:
 				except Exception as e:
 					print ("   %s"%e)
 					continue
-                                print ("\033[0;96m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				print ("\033[0;97m[•] Crack Started...")
-                                print ("\033[0;96m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print("   \033[0;92m[•] Finished")
@@ -531,9 +530,9 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			print ("\033[0;92m[•] Crack Started...")
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print("   \033[0;92m[•] Finished")
@@ -614,9 +613,9 @@ class crack1:
 				except Exception as e:
 					print ("   %s"%e)
 					continue
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				print ("\033[0;92m[•] Crack Started...")
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print("   \033[0;92m[•] Finished")
@@ -628,9 +627,9 @@ class crack1:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			print ("\033[0;92m[•] Crack Started...")
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print("   \033[0;92m[•] Finished")
@@ -711,9 +710,9 @@ class crack2:
 				except Exception as e:
 					print ("   %s"%e)
 					continue
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				print ("\033[0;92m[•] Crack Started...")
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print("  \033[0;97l2m [•] Finished")
@@ -725,9 +724,9 @@ class crack2:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			print ("\033[0;92m[•] Crack Started...")
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print("   \033[0;92m[•] Finished")
@@ -808,9 +807,9 @@ class crack2:
 				except Exception as e:
 					print ("   %s"%e)
 					continue
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				print ("\033[0;92m[•] Crack Started...")
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print("   \033[0;92m[•] Finished")
@@ -822,9 +821,9 @@ class crack2:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			print ("\033[0;92m[•] Crack Started...")
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print("  \033[0;92m [•] Finished")
@@ -905,9 +904,9 @@ class crack3:
 				except Exception as e:
 					print ("   %s"%e)
 					continue
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				print ("\033[0;92m[•] Crack Started...")
-                                print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                                print ("\033[0;97m---------------------------------------------")
 				ThreadPool(30).map(self.main,self.fl)
 				os.remove(self.apk)
 				print("   \033[0;92m[•] Finished")
@@ -919,9 +918,9 @@ class crack3:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			print ("\033[0;92m[•] Crack Started...")
-                        print ("\033[0;97m─────────────────────────────────────────────────────────────")
+                        print ("\033[0;97m---------------------------------------------")
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print("   \033[0;91m[•] Finished")
