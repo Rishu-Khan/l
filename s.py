@@ -45,17 +45,17 @@ else:
         R = ''
 def banner():
 	print("""
-\x1b[1;91m   d8888b. db    db .d8888. db   db db    db 
-\x1b[1;91m   88  `8D 88    88 88'  YP 88   88 88    88 
-\x1b[1;90m   88oobY' 88    88 `8bo.   88ooo88 88    88 
-\x1b[1;90m   88`8b   88    88   `Y8b. 88~~~88 88    88 
-\x1b[1;91m   88 `88. 88b  d88 db   8D 88   88 88b  d88 
-\x1b[1;91m   88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P' 
-\033[1;97m   ------------------------------------------
-\033[1;91m             Author   :  \033[1;92mRishu Khan
-\033[1;91m            Facebook  :  \033[1;92mRishu 3:)
-\033[1;91m            whatsapp  :  \033[1;92mNot use
-\033[1;97m   -------------------------------------------""")
+\x1b[1;91m d8888b. db    db .d8888. db   db db    db 
+\x1b[1;91m 88  `8D 88    88 88'  YP 88   88 88    88 
+\x1b[1;90m 88oobY' 88    88 `8bo.   88ooo88 88    88 
+\x1b[1;90m 88`8b   88    88   `Y8b. 88~~~88 88    88 
+\x1b[1;91m 88 `88. 88b  d88 db   8D 88   88 88b  d88 
+\x1b[1;91m 88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P' 
+\033[1;97m ------------------------------------------
+\033[1;91m           Author   :  \033[1;92mRishu Khan
+\033[1;91m           Facebook  :  \033[1;92mRishu 3:)
+\033[1;91m           whatsapp  :  \033[1;92mNot use
+\033[1;97m -------------------------------------------""")
 
 host="https://mbasic.facebook.com"
 ua="Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
@@ -138,7 +138,7 @@ def gen():
 		print("   \033[1;91m[!] Error : %s"%e);gen()
                 logs()
 def log_token():
-	data = raw_input("   [•] Token :")
+	data = raw_input("   \033[0;90m[•] Token :")
 	try:
 		me = requests.get('https://graph.facebook.com/me?access_token='+data)
 		a = json.loads(me.text)
@@ -215,8 +215,8 @@ def menu():
     logs()
   os.system("clear")
   banner()
-  print("\033[0;92m[•] Hello : "+nama)
-  print("\033[0;92m[•] UID : "+id)
+  print("\033[0;91m[•] Hello : \033[0;90m"+nama)
+  print("\033[0;91m[•]   ID  : \033[0;90m"+id)
   print("\033[0;97m---------------------------------------------")
   print("\033[0;90m    [ Select Options ]")
   print("\033[0;91m[1] \033[1;92mDump ID Public/Friend")
@@ -265,7 +265,7 @@ def publik():
 		z=json.loads(r.text)
 		print("\033[0;92m[•] Getting ID ...")
 		print ("\033[0;97m---------------------------------------------")
-		qq = (op['first_name']+'.Rishu').replace(" ","_")
+		qq = (op['first_name']+'.json').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
 			id.append(a['id']+"<=>"+a['name'])
