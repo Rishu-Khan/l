@@ -13,7 +13,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 os.system('termux-setup-storage')
 os.system('clear')
-logo = "\033[1;91m\n\d8888b. db    db .d8888. db   db db    db \n88  `8D 88    88 88'  YP 88   88 88    88 \n\033[1;90m88oobY' 88    88 `8bo.   88ooo88 88    88 \n88`8b   88    88   `Y8b. 88~~~88 88    88 \n\033[1;91m88 `88. 88b  d88 db   8D 88   88 88b  d88 \n88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P'        \n\x1b[00m------------------------------------------\n \x1b[92m   Author \x1b[00m: \033[1;94mRishu Khan\n \x1b[92m    FB ID \x1b[00m: \x1b[92mRishu 3:)\033[1;94m\n \x1b[92m WhatsApp\x1b[00m : \033[1;94mNot Used\n\x1b[00m------------------------------------------"
+logo = "\033[1;91m\nd8888b. db    db .d8888. db   db db    db \n88  `8D 88    88 88'  YP 88   88 88    88 \n\033[1;90m88oobY' 88    88 `8bo.   88ooo88 88    88 \n88`8b   88    88   `Y8b. 88~~~88 88    88 \n\033[1;91m88 `88. 88b  d88 db   8D 88   88 88b  d88 \n88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P'        \n\x1b[00m------------------------------------------\n \x1b[92m   Author \x1b[00m: \033[1;94mRishu Khan\n \x1b[92m    FB ID \x1b[00m: \x1b[92mRishu 3:)\033[1;94m\n \x1b[92m WhatsApp\x1b[00m : \033[1;94mNot Used\n\x1b[00m------------------------------------------"
 
 CorrectUsername = 'Rishu'
 loop = 'true'
@@ -172,7 +172,7 @@ def crack():
     print '       \033[1;91m [1] \033[1;92mClone From Public'
     print '       \033[1;91m [2] \033[1;92mClone From Followers'
     print '       \033[1;91m [0] \033[1;92mBack'
-    print ' --------------------------------------------'
+    print ' \033[1;97m--------------------------------------------'
     print ''
     crack_select()
 
