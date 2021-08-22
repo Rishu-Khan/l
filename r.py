@@ -52,7 +52,7 @@ def banner():
 \x1b[1;91m 88 `88. 88b  d88 db   8D 88   88 88b  d88 
 \x1b[1;91m 88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P' 
 \033[1;97m ------------------------------------------
-\033[1;91m               Author   :  \033[1;92mRishu Khan
+\033[1;91m            Author   :  \033[1;92mRishu Khan
 \033[1;91m           Facebook  :  \033[1;92mRishu 3:)
 \033[1;91m           whatsapp  :  \033[1;92mNot use
 \033[1;97m -------------------------------------------""")
@@ -490,7 +490,6 @@ class crack:
 							continue
 					self.fl=[]
 					for i in self.fs:
-						os.system("clear")
 						try:
 							self.fl.append({"id":i.split("<=>")[0]})
 						except:continue
@@ -512,7 +511,6 @@ class crack:
 							continue
 					self.fl=[]
 					for i in self.fs:
-						os.system("clear")
 						try:
 							self.fl.append({"id":i.split("<=>")[0],"pw":generate(i.split("<=>")[1])})
 						except:continue
