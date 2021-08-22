@@ -254,7 +254,7 @@ def publik():
 		idt = raw_input("\033[0;92m[•] User ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-			op = json.loads(jok.text)
+			op = rishu.loads(jok.text)
 			print("\033[0;92m[•] Name         : \033[0;90m"+op["name"])
 		except KeyError:
 			print("  \033[0;91m [!] ID NOT found !").format("R")
@@ -265,7 +265,7 @@ def publik():
 		z=json.loads(r.text)
 		print("\033[0;92m[•] Getting ID ...")
 		print ("\033[0;97m─────────────────────────────────────────────────────────────")
-		qq = (op['first_name']+'.,Rk).replace(" ","_")
+		qq = (op['first_name']+'.,rishu).replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
 			id.append(a['id']+"<=>"+a['name'])
