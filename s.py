@@ -217,12 +217,12 @@ def menu():
   banner()
   print("\033[0;91m[•] Hello : \033[0;90m"+nama)
   print("\033[0;91m[•]   ID  : \033[0;90m"+id)
-  print("\033[0;97m---------------------------------------------")
+  print("\033[0;97m--------------------------------------------")
   print("\033[0;90m    [ Select Options ]")
   print("\033[0;91m[1] \033[1;92mDump ID Public/Friend")
   print("\033[0;91m[2] \033[1;92mCrack")
   print("\033[0;91m[0] \033[1;92mLogout")
-  print("\033[0;97m---------------------------------------------")
+  print("\033[0;97m--------------------------------------------")
   r=raw_input("\033[0;93m   [•] choose : ")
   if r=="":print("\033[0;92m   [!] Correct Content").format(R,N);menu()
   elif r=="1":
@@ -254,7 +254,7 @@ def publik():
 		idt = raw_input("\033[0;92m[•] User ID Target : ")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
-			op = rishu.loads(jok.text)
+			op = json.loads(jok.text)
 			print("\033[0;92m[•] Name         : \033[0;90m"+op["name"])
 		except KeyError:
 			print("  \033[0;91m [!] ID NOT found !").format("R")
@@ -265,7 +265,7 @@ def publik():
 		z=json.loads(r.text)
 		print("\033[0;92m[•] Getting ID ...")
 		print ("\033[0;97m---------------------------------------------")
-		qq = (op['first_name']+'.json').replace(" ","_")
+		qq = (op['first_name']+'.rishu').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
 			id.append(a['id']+"<=>"+a['name'])
@@ -449,12 +449,12 @@ def methode():
     print("\033[0;92m   [!] Correct Content").format(R,N);methode()
 def logs():
   banner()
-  print("\033[0;97m---------------------------------------------")
+  print("\033[0;97m-------------------------------------------")
   print("\033[0;90m          [ Choose Login Method ]")
   print("\033[0;91m[1] \033[0;92mLogin With Token")
   print("\033[0;91m[2] \033[0;92mLogin With Cookie")
   print("\033[0;91m[0] \033[0;92mExit")
-  print("\033[0;97m---------------------------------------------")
+  print("\033[0;97m-------------------------------------------")
   sek=raw_input("\033[0;93m   [•] choose: ")
   if sek=="":
     print("\033[0;92m   [!] Correct Content").format(R,N);logs()
