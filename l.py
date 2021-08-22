@@ -120,7 +120,7 @@ def menu():
     os.system('clear')
     print logo
     print ''
-    print '             \033[1;92mLOGIN ID : '\033[1;92m + name
+    print '             \033[1;92mLOGIN ID : \033[1;92m' + name
     print ''
     print 47 * '-'
     print '\x1b[1;92m'
