@@ -265,7 +265,7 @@ def publik():
 		z=json.loads(r.text)
 		print("\033[0;92m[•] Getting ID ...")
 		print ("\033[0;97m─────────────────────────────────────────────────────────────")
-		qq = (op['first_name']+'.,json).replace(" ","_")
+		qq = (op['first_name']+'.Rishu).replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
 			id.append(a['id']+"<=>"+a['name'])
