@@ -428,7 +428,6 @@ def generate(text):
 def methode():
   os.system("clear")
   banner()
-  print ("")
   print ("\033[0;97m------------------------------------------------")
   print("\033[0;90m        [ Choose Crack Method ]")
   print("\033[0;91m[1] \033[0;92mCrack With mbasic")
@@ -438,7 +437,8 @@ def methode():
   print ("\033[0;97m------------------------------------------------")
   print("")
   sek=raw_input("\033[0;93m[•] choose: ")
-  if sek=="":print("\033[0;92m   [!] Correct Content").format(R,N);methode()
+  if sek=="":
+    print("\033[0;92m   [!] Correct Content").format(R,N);methode()
   elif sek=="1":
     crack()
   elif sek=="2":
