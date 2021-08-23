@@ -1,9 +1,6 @@
 #-*-coding:utf-8-*-
 
-#Create & Recode By Dapunta & Rizal
-#Lu Mau Recode, Mau Lu Apain Terserah Bro, Tapi Hargai Lah Karya Kami.
-#Gw Bikin Ni SC Sama Rizal Susah Payah, Ngerakit Sana Sini Banyak Error, Jgn Seenaknya Ganti Nama Author, Apalagi Ngalihin Botnya. Terima Kasih.
-
+#Coding by- Rishu khan
 # User Agent
 #User Agent Xiaomi : Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]
 #User Agent Vivo Z1 Pro : Mozilla/5.0 (Linux; Android 10; vivo 1918) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]
@@ -45,12 +42,12 @@ else:
         R = ''
 def banner():
 	print("""
-\x1b[1;91m d8888b. db    db .d8888. db   db db    db 
-\x1b[1;91m 88  `8D 88    88 88'  YP 88   88 88    88 
-\x1b[1;90m 88oobY' 88    88 `8bo.   88ooo88 88    88 
-\x1b[1;90m 88`8b   88    88   `Y8b. 88~~~88 88    88 
-\x1b[1;91m 88 `88. 88b  d88 db   8D 88   88 88b  d88 
-\x1b[1;91m 88   YD ~Y8888P' `8888Y' YP   YP ~Y8888P' 
+\x1b[1;91m d8888b. d888888b .d8888. db   db db    db  
+\x1b[1;91m 88  `8D   `88'   88'  YP 88   88 88    88  
+\x1b[1;90m 88oobY'    88    `8bo.   88ooo88 88    88  
+\x1b[1;90m 88`8b      88      `Y8b. 88~~~88 88    88 
+\x1b[1;91m 88 `88.   .88.   db   8D 88   88 88b  d88  
+\x1b[1;91m 88   YD Y888888P `8888Y' YP   YP ~Y8888P'  
 \033[1;97m ------------------------------------------
 \033[1;91m            Author   :  \033[1;92mRishu Khan
 \033[1;91m           Facebook  :  \033[1;92mRishu 3:)
